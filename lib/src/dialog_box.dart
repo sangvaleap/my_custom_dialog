@@ -28,7 +28,7 @@ class DialogBox extends StatelessWidget {
         : _buildContent(context);
   }
 
-  Widget _buildContent(context) {
+  Widget _buildContent(BuildContext context) {
     var bottomPadding = !kIsWeb && (Platform.isIOS || Platform.isAndroid)
         ? AppConstant.dialogPadding / 2
         : AppConstant.dialogPadding;
