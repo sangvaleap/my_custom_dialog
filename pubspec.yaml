@@ -1,7 +1,7 @@
 name: flutter_custom_dialog
 description: "A new Flutter package for custom dialogs."
 version: 0.0.1
-homepage:
+repository: https://github.com/sangvaleap/flutter_custom_dialog
 
 environment:
   sdk: ^3.9.0
