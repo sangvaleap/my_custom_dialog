@@ -1,7 +1,7 @@
 name: my_custom_dialog
 description: A Flutter package to display a set of custom dialogs including message dialog, confirmation dialog, options dialog, and input dialog. 
  These dialogs are designed to be reusable and customizable for various applications.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/sangvaleap/my_custom_dialog
 
 environment:
