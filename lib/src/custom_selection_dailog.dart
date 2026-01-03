@@ -1,6 +1,6 @@
-import 'package:flutter_custom_dialog/src/dialog_box.dart';
-import 'package:flutter_custom_dialog/src/models/selection_dialog_option.dart';
-import 'package:flutter_custom_dialog/src/utils/app_constant.dart';
+import 'package:my_custom_dialog/src/dialog_box.dart';
+import 'package:my_custom_dialog/src/models/selection_dialog_option.dart';
+import 'package:my_custom_dialog/src/utils/app_constant.dart';
 import 'package:flutter/material.dart';
 
 class CustomSelectionDialog extends StatelessWidget {

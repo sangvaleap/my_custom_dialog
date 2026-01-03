@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_custom_dialog/flutter_custom_dialog.dart';
+import 'package:my_custom_dialog/my_custom_dialog.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +31,7 @@ class MyHomePage extends StatelessWidget {
           children: [
             FilledButton(
               onPressed: () {
-                FlutterCustomDialog.showMessageDialog(
+                MyCustomDialog.showMessageDialog(
                   context,
                   type: MessageDialogType.success,
                   message: 'This is a success message dialog.',
@@ -42,7 +42,7 @@ class MyHomePage extends StatelessWidget {
             const SizedBox(height: 10),
             FilledButton(
               onPressed: () {
-                FlutterCustomDialog.showMessageDialog(
+                MyCustomDialog.showMessageDialog(
                   context,
                   type: MessageDialogType.success,
                   message: 'This is a success message dialog.',
@@ -54,7 +54,7 @@ class MyHomePage extends StatelessWidget {
             const SizedBox(height: 10),
             FilledButton(
               onPressed: () {
-                FlutterCustomDialog.showMessageDialog(
+                MyCustomDialog.showMessageDialog(
                   context,
                   type: MessageDialogType.error,
                   message: 'This is an error message dialog.',
@@ -65,7 +65,7 @@ class MyHomePage extends StatelessWidget {
             const SizedBox(height: 10),
             FilledButton(
               onPressed: () {
-                FlutterCustomDialog.showMessageDialog(
+                MyCustomDialog.showMessageDialog(
                   context,
                   type: MessageDialogType.error,
                   message: 'This is an error message dialog.',
@@ -77,7 +77,7 @@ class MyHomePage extends StatelessWidget {
             const SizedBox(height: 10),
             FilledButton(
               onPressed: () {
-                FlutterCustomDialog.showConfirmDialog(
+                MyCustomDialog.showConfirmDialog(
                   context,
                   title: 'Delete Item',
                   message: 'Do you want to delete this item?',
@@ -91,7 +91,7 @@ class MyHomePage extends StatelessWidget {
             const SizedBox(height: 10),
             FilledButton(
               onPressed: () {
-                FlutterCustomDialog.showConfirmDialog(
+                MyCustomDialog.showConfirmDialog(
                   context,
                   title: 'Delete Item',
                   message: 'Do you want to delete this item?',
@@ -106,7 +106,7 @@ class MyHomePage extends StatelessWidget {
             const SizedBox(height: 10),
             FilledButton(
               onPressed: () {
-                FlutterCustomDialog.showSelectionDialog(
+                MyCustomDialog.showSelectionDialog(
                   context,
                   options: [
                     SelectionDialogOption(key: 'phone', icon: Icons.phone_outlined, text: 'Phone'),
@@ -123,7 +123,7 @@ class MyHomePage extends StatelessWidget {
             const SizedBox(height: 10),
             FilledButton(
               onPressed: () {
-                FlutterCustomDialog.showSelectionDialog(
+                MyCustomDialog.showSelectionDialog(
                   context,
                   options: [
                     SelectionDialogOption(key: 'phone', icon: Icons.phone_outlined, text: 'Phone'),
@@ -141,7 +141,7 @@ class MyHomePage extends StatelessWidget {
             const SizedBox(height: 10),
             FilledButton(
               onPressed: () {
-                FlutterCustomDialog.showInputDialog(
+                MyCustomDialog.showInputDialog(
                   context,
                   title: 'Phone Verification',
                   inputItems: [const TextField(decoration: InputDecoration(labelText: 'enter sms code'))],
@@ -155,7 +155,7 @@ class MyHomePage extends StatelessWidget {
             const SizedBox(height: 10),
             FilledButton(
               onPressed: () {
-                FlutterCustomDialog.showInputDialog(
+                MyCustomDialog.showInputDialog(
                   context,
                   title: 'Phone Verification',
                   assetDialogLogo: 'assets/logo.gif',

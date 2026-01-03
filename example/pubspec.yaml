@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_custom_dialog:
+  my_custom_dialog:
     path: ../
   cupertino_icons: ^1.0.8
 

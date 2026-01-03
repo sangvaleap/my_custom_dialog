@@ -1,12 +1,12 @@
-import 'package:flutter_custom_dialog/src/custom_confirm_dialog.dart';
-import 'package:flutter_custom_dialog/src/custom_input_dialog.dart';
-import 'package:flutter_custom_dialog/src/custom_message_dialog.dart';
-import 'package:flutter_custom_dialog/src/custom_selection_dailog.dart';
-import 'package:flutter_custom_dialog/src/models/selection_dialog_option.dart';
-import 'package:flutter_custom_dialog/src/utils/message_dialog_type.dart';
+import 'package:my_custom_dialog/src/custom_confirm_dialog.dart';
+import 'package:my_custom_dialog/src/custom_input_dialog.dart';
+import 'package:my_custom_dialog/src/custom_message_dialog.dart';
+import 'package:my_custom_dialog/src/custom_selection_dailog.dart';
+import 'package:my_custom_dialog/src/models/selection_dialog_option.dart';
+import 'package:my_custom_dialog/src/utils/message_dialog_type.dart';
 import 'package:flutter/material.dart';
 
-class FlutterCustomDialog {
+class MyCustomDialog {
   /// Displays a message dialog with a title, icon, message, and optional logo.
   ///
   /// The [type] parameter is used to specify the type of message dialog to display.
