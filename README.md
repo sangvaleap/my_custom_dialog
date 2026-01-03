@@ -1,6 +1,6 @@
-# Flutter Custom Dialog
+# My Custom Dialog
 
-The Flutter Custom Dialog package enables dynamic customization of messages, icons, and logos within your app. With a variety of flexible dialog options, you can create interactive and user-friendly experiences effortlessly. 
+The Custom Dialog package enables dynamic customization of messages, icons, and logos within your app. With a variety of flexible dialog options, you can create interactive and user-friendly experiences effortlessly. 
 
 This package includes:
 
