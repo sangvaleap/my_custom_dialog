@@ -22,7 +22,9 @@ class CustomInputDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Dialog(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppConstant.dialogPadding)),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(AppConstant.dialogPadding),
+      ),
       elevation: 0,
       backgroundColor: Colors.transparent,
       child: DialogBox(
@@ -31,7 +33,10 @@ class CustomInputDialog extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(title, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w600)),
+            Text(
+              title,
+              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+            ),
             const SizedBox(height: 15),
             SingleChildScrollView(child: Column(children: inputItems)),
             const SizedBox(height: 15),
@@ -50,7 +55,10 @@ class CustomInputDialog extends StatelessWidget {
           onPressed: () {
             Navigator.of(context).pop();
           },
-          child: Text('Cancel', style: TextStyle(fontSize: 16, color: Colors.grey.shade600)),
+          child: Text(
+            'Cancel',
+            style: TextStyle(fontSize: 16, color: Colors.grey.shade600),
+          ),
         ),
         TextButton(
           onPressed: () {

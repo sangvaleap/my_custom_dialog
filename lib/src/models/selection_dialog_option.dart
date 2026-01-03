@@ -5,9 +5,5 @@ class SelectionDialogOption {
   IconData? icon;
   String text;
 
-  SelectionDialogOption({
-    required this.key,
-    required this.text,
-    this.icon,
-  });
+  SelectionDialogOption({required this.key, required this.text, this.icon});
 }

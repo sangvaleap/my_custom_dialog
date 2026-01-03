@@ -21,7 +21,8 @@ class DialogLogo extends StatelessWidget {
               ? DecorationImage(
                   image: AssetImage(assetLogo!),
                   fit: BoxFit.contain,
-                  onError: (exception, stackTrace) => const Placeholder(color: Colors.grey),
+                  onError: (exception, stackTrace) =>
+                      const Placeholder(color: Colors.grey),
                 )
               : null,
         ),

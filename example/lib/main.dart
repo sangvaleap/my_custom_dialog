@@ -12,7 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple), useMaterial3: true),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
       debugShowCheckedModeBanner: false,
       home: const MyHomePage(),
     );
@@ -109,9 +112,21 @@ class MyHomePage extends StatelessWidget {
                 MyCustomDialog.showSelectionDialog(
                   context,
                   options: [
-                    SelectionDialogOption(key: 'phone', icon: Icons.phone_outlined, text: 'Phone'),
-                    SelectionDialogOption(key: 'email', icon: Icons.email_outlined, text: 'Email'),
-                    SelectionDialogOption(key: 'sms', icon: Icons.sms_outlined, text: 'SMS'),
+                    SelectionDialogOption(
+                      key: 'phone',
+                      icon: Icons.phone_outlined,
+                      text: 'Phone',
+                    ),
+                    SelectionDialogOption(
+                      key: 'email',
+                      icon: Icons.email_outlined,
+                      text: 'Email',
+                    ),
+                    SelectionDialogOption(
+                      key: 'sms',
+                      icon: Icons.sms_outlined,
+                      text: 'SMS',
+                    ),
                   ],
                   onSelected: (selected) {
                     // proceed with the selected option
@@ -126,9 +141,21 @@ class MyHomePage extends StatelessWidget {
                 MyCustomDialog.showSelectionDialog(
                   context,
                   options: [
-                    SelectionDialogOption(key: 'phone', icon: Icons.phone_outlined, text: 'Phone'),
-                    SelectionDialogOption(key: 'email', icon: Icons.email_outlined, text: 'Email'),
-                    SelectionDialogOption(key: 'sms', icon: Icons.sms_outlined, text: 'SMS'),
+                    SelectionDialogOption(
+                      key: 'phone',
+                      icon: Icons.phone_outlined,
+                      text: 'Phone',
+                    ),
+                    SelectionDialogOption(
+                      key: 'email',
+                      icon: Icons.email_outlined,
+                      text: 'Email',
+                    ),
+                    SelectionDialogOption(
+                      key: 'sms',
+                      icon: Icons.sms_outlined,
+                      text: 'SMS',
+                    ),
                   ],
                   assetDialogLogo: 'assets/logo.gif',
                   onSelected: (selected) {
@@ -144,7 +171,11 @@ class MyHomePage extends StatelessWidget {
                 MyCustomDialog.showInputDialog(
                   context,
                   title: 'Phone Verification',
-                  inputItems: [const TextField(decoration: InputDecoration(labelText: 'enter sms code'))],
+                  inputItems: [
+                    const TextField(
+                      decoration: InputDecoration(labelText: 'enter sms code'),
+                    ),
+                  ],
                   onSubmit: () {
                     // proceed with the input data
                   },
@@ -159,7 +190,11 @@ class MyHomePage extends StatelessWidget {
                   context,
                   title: 'Phone Verification',
                   assetDialogLogo: 'assets/logo.gif',
-                  inputItems: [const TextField(decoration: InputDecoration(labelText: 'enter sms code'))],
+                  inputItems: [
+                    const TextField(
+                      decoration: InputDecoration(labelText: 'enter sms code'),
+                    ),
+                  ],
                   onSubmit: () {
                     // proceed with the input data
                   },

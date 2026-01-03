@@ -25,7 +25,9 @@ class CustomMessgeDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     _DialogModel dialogType = _getDialogType(type);
     return Dialog(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppConstant.dialogPadding)),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(AppConstant.dialogPadding),
+      ),
       elevation: 0,
       backgroundColor: Colors.transparent,
       child: DialogBox(
@@ -33,12 +35,23 @@ class CustomMessgeDialog extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            Text(title ?? dialogType.title, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w600)),
-            if (showIcon) Padding(padding: const EdgeInsets.only(top: 10), child: dialogType.icon),
+            Text(
+              title ?? dialogType.title,
+              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+            ),
+            if (showIcon)
+              Padding(
+                padding: const EdgeInsets.only(top: 10),
+                child: dialogType.icon,
+              ),
             if (message != null)
               Padding(
                 padding: const EdgeInsets.only(top: 10),
-                child: Text(message!, style: const TextStyle(fontSize: 15), textAlign: TextAlign.center),
+                child: Text(
+                  message!,
+                  style: const TextStyle(fontSize: 15),
+                  textAlign: TextAlign.center,
+                ),
               ),
             const SizedBox(height: 15),
             Align(

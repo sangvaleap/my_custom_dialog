@@ -6,7 +6,13 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class DialogBox extends StatelessWidget {
-  const DialogBox({super.key, required this.child, this.assetLogo, this.minWidth, this.maxWidth = 500});
+  const DialogBox({
+    super.key,
+    required this.child,
+    this.assetLogo,
+    this.minWidth,
+    this.maxWidth = 500,
+  });
   final Widget child;
   final String? assetLogo;
   final double? minWidth;
@@ -33,11 +39,16 @@ class DialogBox extends StatelessWidget {
         ? AppConstant.dialogPadding / 2
         : AppConstant.dialogPadding;
     return ConstrainedBox(
-      constraints: BoxConstraints(minWidth: minWidth ?? 200, maxWidth: maxWidth),
+      constraints: BoxConstraints(
+        minWidth: minWidth ?? 200,
+        maxWidth: maxWidth,
+      ),
       child: Container(
         padding: EdgeInsets.fromLTRB(
           AppConstant.dialogPadding,
-          assetLogo != null ? (AppConstant.dialogLogoSize / 2) + AppConstant.dialogPadding : AppConstant.dialogPadding,
+          assetLogo != null
+              ? (AppConstant.dialogLogoSize / 2) + AppConstant.dialogPadding
+              : AppConstant.dialogPadding,
           AppConstant.dialogPadding,
           bottomPadding,
         ),
@@ -46,7 +57,13 @@ class DialogBox extends StatelessWidget {
           shape: BoxShape.rectangle,
           color: Theme.of(context).scaffoldBackgroundColor,
           borderRadius: BorderRadius.circular(AppConstant.dialogPadding),
-          boxShadow: const [BoxShadow(color: Colors.black38, offset: Offset(0, 10), blurRadius: 10)],
+          boxShadow: const [
+            BoxShadow(
+              color: Colors.black38,
+              offset: Offset(0, 10),
+              blurRadius: 10,
+            ),
+          ],
         ),
         child: child,
       ),

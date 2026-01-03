@@ -1,6 +1,1 @@
-enum MessageDialogType {
-  success,
-  error,
-  warning,
-  info,
-}
+enum MessageDialogType { success, error, warning, info }

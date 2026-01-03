@@ -22,7 +22,9 @@ class CustomSelectionDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Dialog(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppConstant.dialogPadding)),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(AppConstant.dialogPadding),
+      ),
       elevation: 0,
       backgroundColor: Colors.transparent,
       child: DialogBox(
@@ -30,7 +32,10 @@ class CustomSelectionDialog extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(title, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w600)),
+            Text(
+              title,
+              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+            ),
             const SizedBox(height: 5),
             const Divider(),
             _buildOptions(context),
@@ -56,7 +61,9 @@ class CustomSelectionDialog extends StatelessWidget {
       itemBuilder: (_, index) {
         var option = options[index];
         return ListTile(
-          contentPadding: const EdgeInsets.symmetric(horizontal: AppConstant.dialogPadding / 2),
+          contentPadding: const EdgeInsets.symmetric(
+            horizontal: AppConstant.dialogPadding / 2,
+          ),
           leading: option.icon != null ? Icon(option.icon) : null,
           title: Text(option.text, style: const TextStyle(fontSize: 15)),
           onTap: () {
@@ -66,7 +73,9 @@ class CustomSelectionDialog extends StatelessWidget {
         );
       },
       separatorBuilder: (_, __) => const Padding(
-        padding: EdgeInsets.symmetric(horizontal: AppConstant.dialogPadding / 2),
+        padding: EdgeInsets.symmetric(
+          horizontal: AppConstant.dialogPadding / 2,
+        ),
         child: Divider(height: 0),
       ),
       itemCount: options.length,

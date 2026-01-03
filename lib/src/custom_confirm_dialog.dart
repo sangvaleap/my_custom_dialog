@@ -21,7 +21,9 @@ class CustomConfirmDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Dialog(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppConstant.dialogPadding)),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(AppConstant.dialogPadding),
+      ),
       elevation: 0,
       backgroundColor: Colors.transparent,
       child: DialogBox(
@@ -29,9 +31,16 @@ class CustomConfirmDialog extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            Text(title, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w600)),
+            Text(
+              title,
+              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+            ),
             const SizedBox(height: 15),
-            Text(message, style: const TextStyle(fontSize: 15), textAlign: TextAlign.center),
+            Text(
+              message,
+              style: const TextStyle(fontSize: 15),
+              textAlign: TextAlign.center,
+            ),
             const SizedBox(height: 15),
             _buildActionButtons(context),
           ],
@@ -49,7 +58,10 @@ class CustomConfirmDialog extends StatelessWidget {
             Navigator.of(context).pop();
             onNo?.call();
           },
-          child: Text('No', style: TextStyle(fontSize: 16, color: Colors.grey.shade600)),
+          child: Text(
+            'No',
+            style: TextStyle(fontSize: 16, color: Colors.grey.shade600),
+          ),
         ),
         TextButton(
           onPressed: () {
