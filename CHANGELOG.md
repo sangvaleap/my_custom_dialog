@@ -1,3 +1,7 @@
+## 0.0.2
+
+* Update package description and dart format
+
 ## 0.0.1
 
-* TODO: Describe initial release.
+* Initial development release.
